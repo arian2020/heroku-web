@@ -1,0 +1,22 @@
+{
+  "name": "heroku-docker-nginx-example",
+  "description": "A barebones nginx installation using Docker",
+  "repository": "https://github.com/rjoonas/heroku-docker-nginx-example",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Nginx_logo.svg",
+  "keywords": ["nginx", "docker", "proxy"],
+  "env": {
+    "VER": {
+       "description": "输入v4ray Core 版本号（latest表示最新版本）",
+       "value": "latest"
+     }, 
+    "UUID": {
+       "description": "Vmess协议默认UUID，请输入自己的UUID",
+       "value": "8fd6dedc-6d58-3ae7-91bb-e6b808218102"
+     },
+    "V2RAY_RAY_BUFFER_SIZE": {
+       "description": "每个连接的缓存大小，单位MB",
+       "value": "10"
+     }
+  },
+  "stack": "container"
+}

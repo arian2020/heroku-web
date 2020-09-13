@@ -1,0 +1,29 @@
+{
+  "log": {
+    "loglevel": "warning"
+  },
+  "inbound": {
+    "listen":"127.0.0.1",
+    "port": 39061,
+    "protocol": "vmess",
+    "settings": {
+      "clients": [
+        {
+          "id": "your_own_uuid",
+          "alterId": 64,
+	  "security": "chacha20-ploy1350"
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "ws",
+      "wsSettings": {
+      "path": "/images/backgroundHD.png"
+      }
+    }
+  },
+  "outbound": {
+    "protocol": "freedom",
+    "settings": {}
+  }
+}
